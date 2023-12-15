@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> demonstrating js lab</title>
+    <script src="./mainApp.js"></script>
+    <script src="./mathoperation.js"></script>
+    <style>
+        ul{
+           border: 2px solid brown;
+            width: 600px;
+            height: 300px;
+            margin: 10px auto;
+            background: #706666;
+        }
+        li{
+            text-align: center;
+            list-style: none;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #352828;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <input type="text"  id="fval"  placeholder="Enter first value">
+        </li>
+        
+        <li>
+            <input type="text"  id="sval" placeholder="Enter second value">
+        </li>
+        
+        <li>
+            <input type="button"  value="get addition" onclick="doOperation('add')">
+            <input type="button"  value="get multiplication"onclick="doOperation('mul')">
+            <input type="button"  value="get subtraction" onclick="doOperation('sub')">
+            <input type="button"  value="get divition" onclick="doOperation('div')">
+        </li>
+        <li class="rblock"></li>
+    </ul>
+</body>
+</html>
